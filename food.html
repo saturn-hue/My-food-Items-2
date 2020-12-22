@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">							
+<head>							
+    <meta charset="UTF-8">							
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">							
+    <meta name="description" content="Contents about Technology">							
+    <meta name="keywords" content="HTML,CSS,Javasript">							
+    <meta name="author" content="Saturday Okposio">							
+    <link rel="stylesheet" href="food.css" >
+	<script src="food.js"></script>							
+    <title>Food Items</title>
+<script>
+    function foods() {
+        var spot = document.getElementById("items");
+        var itemA = spot.firstChild;
+        var itemB = itemA.nextSibling;
+        var itemC = itemB.nextSibling;
+        var itemD = itemC.nextSibling;
+        itemA.innerHTML = "Butter";
+        itemB.innerHTML = "Bread";
+        itemC.innerHTML = "Peanut";
+        itemD.innerHTML = "oil";
+        
+        }	
+    </script>	
+					
+</head>
+<body>
+    <h2>My food Items</h2>
+    <p>Below is the lists of food items for the day.</p>
+    <ul id="items">
+        <li>Butter</li>
+        <li>Bread</li>
+        <li>Peanut</li>
+        <li>oil</li>
+    </ul>
+    <button type="button" onclick="foods()">
+        Change-Items
+    </button>
+</body>
+</html>
